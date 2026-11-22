@@ -1,0 +1,2 @@
+Subtag Manager - apply tag Equivalents and Combinations rules to the whole calibre library,
+with a per-book preview that must be confirmed before anything is written.

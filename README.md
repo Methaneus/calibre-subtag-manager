@@ -1,29 +1,15 @@
 # Subtag Manager (calibre plugin)
 
+Made with Grokbot.
+
 Applies two kinds of tag rules — **Equivalents** and **Combinations** — to every book in the
 current calibre library. It scans first without writing anything, shows a per-book preview, and
 writes only after you click **Apply changes**.
-
-* Plugin ZIP: `/workspace/Subtag_Manager.zip`
-* Source: `subtag_manager/` · tests: `tests/` · build script: `build.py`
-* Version **1.2.0**. Renamed from Tag Manager. Sortable tables and rules Export/Import were added
-  in 1.1.0.
-* Requires calibre 6.0 or newer (Qt6 via `qt.core`). Tested with calibre 9.18 on Linux.
-* License: GNU GPL v3 (see `LICENSE`). Copyright (C) 2026 Meth.
 
 ## Back up first
 This plugin bulk-edits tags. Before the first real run, back up your library. You can copy the
 whole library folder while calibre is closed, or use *Library → Library maintenance → Back up
 metadata* plus a copy of `metadata.db`. Try your rules on a copy of the library first.
-
-## Install
-1. calibre → *Preferences → Advanced → Plugins → Load plugin from file* → choose `Subtag_Manager.zip`
-   and accept the warning. Or run `calibre-customize -a Subtag_Manager.zip` from the command line.
-2. Restart calibre.
-3. If you previously used **Tag Manager**, remove that plugin as described above.
-4. Add the button to the toolbar: *Preferences → Interface → Toolbars & menus* → choose
-   *The main toolbar* → move **Subtag Manager** from the available actions to the toolbar. calibre
-   usually offers to do this when the plugin is installed.
 
 ## Configure
 Open the dialog from either place:
@@ -40,6 +26,8 @@ it.
 Completely blank rows are ignored. A partly filled row blocks saving until you complete it or
 remove it. Rules are stored with calibre JSONConfig in `plugins/subtag_manager.json` in the calibre
 config folder.
+
+<img src="subtag_manager/screenshots/03.png" width="25%"/> <img src="subtag_manager/screenshots/04.png" width="25%"/>
 
 ### Sorting the rule tables
 Click a column header (*First*, *Second*, *Parent 1*, *Parent 2*, *Combo*) to sort the rows by

@@ -11,18 +11,6 @@ writes only after you click **Apply changes**.
 * Requires calibre 6.0 or newer (Qt6 via `qt.core`). Tested with calibre 9.18 on Linux.
 * License: GNU GPL v3 (see `LICENSE`). Copyright (C) 2026 Meth.
 
-## Upgrading from Tag Manager
-
-calibre treats a plugin with a different name as a **different plugin**. After you install
-**Subtag Manager**, remove the old **Tag Manager** plugin so you do not end up with both on the
-toolbar or edit rules in the wrong one: *Preferences → Advanced → Plugins*, select **Tag Manager**,
-then *Remove plugin*.
-
-Existing rules are migrated automatically. The first time Subtag Manager loads, if
-`plugins/subtag_manager.json` is not present and the old `plugins/tag_manager.json` exists, those
-rules are copied once into the new file. An already-saved Subtag Manager config is never
-overwritten, even if it has no rules.
-
 ## Back up first
 This plugin bulk-edits tags. Before the first real run, back up your library. You can copy the
 whole library folder while calibre is closed, or use *Library → Library maintenance → Back up
